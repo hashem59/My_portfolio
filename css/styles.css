@@ -1,0 +1,271 @@
+html {
+	position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    overflow-x: hidden;
+    color: #5a5a5a;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.nvb-left::-webkit-scrollbar {
+	border-radius: 20px;
+	width: 5px;
+	background-color: #372db3;
+}
+.nvb-left::-webkit-scrollbar-thumb {
+	border-radius: 20px;
+	background-color: #493fc8;
+}
+
+.about-me::-webkit-scrollbar {
+	border-radius: 10px;
+	width: 8px;
+	background-color: #f6f6f6;
+}
+.about-me::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #999;
+}
+
+.nvb-left {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    display: inline-block;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    -webkit-box-shadow: 5px 0 30px rgba(0,0,0,0.2);
+    box-shadow: 5px 0 30px rgba(0,0,0,0.2);
+    overflow-y: auto;
+	width: 130px;
+}
+
+.head-img {
+    padding: 12.5% 12.5% 8.75%;
+    background: #fff;
+}
+
+.nvb-left img {
+    border-radius: 50%;
+    width: 100%
+}
+
+.nvb-left h3 {
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    text-transform:capitalize;
+    margin: 0;
+    padding-bottom: 9px;
+    background: #fff;
+}
+
+.main-menu {
+    
+}
+
+.main-menu ul li a {
+    display: block;
+    color: #b5b0f7;
+    padding: 23px;
+    background-color: #372db4;
+    border-bottom: 1px solid #493fc8;
+    text-align: center;
+    z-index: 2000;
+}
+
+.main-menu ul li:last-of-type a {
+    border: 0;
+}
+
+.main-menu ul li a i {
+    display: block;
+    font-size: 28px;
+}
+
+.main-menu ul li a span {
+    font-size: 12px;
+    display: block;
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+
+
+
+.nvb-left .social {
+    background: #372db4;
+    padding: 70px 0 20px 0px;
+}
+
+.nvb-left .social ul {
+    background: #493fc8;
+    width: 97%;
+    margin-left: 1%;
+    padding: 5px 0;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.nvb-left .social ul li {
+    display: inline-block;
+    padding: 0 5px;
+    
+}
+
+.nvb-left .social ul li a i {
+    color: #b5b0f7;
+}
+
+.nvb-left .social ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.button-collapse i {
+    color: #fff;
+    background: #493fc8;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.active {
+    background-color: #493fc8 !important;
+    color: #fff !important;
+}
+
+.site-content {
+    position: fixed;
+    left: 130px;
+    width: auto;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.site-content  .home-pg {
+	height: 100%;
+    width: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(61, 66, 55, 0.70))), url(../images/marvin-meyer-571072-unsplash1.jpg);
+    background: linear-gradient(rgba(61, 66, 55, 0.70)), url(../images/marvin-meyer-571072-unsplash1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+.site-content .home-pg h1 {
+    font-size: 130px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 40vh;
+}
+
+
+
+.site-content .home-pg h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: #ece9e9;
+}
+
+.site-content .home-pg span {
+-webkit-transition: all 0.25s;
+transition: all 0.25s;
+position: relative;
+/*float: left;*/
+/*top: 400px;*/
+opacity: 0;
+}
+
+/*Responsive Home page & Left side nav*/
+
+@media screen and (max-width: 992px) and (min-width: 600px){
+    
+    .site-content .home-pg h1 {
+    font-size: 100px;
+    padding-top: 36vh;
+    }
+	
+    .site-content .home-pg h3 {
+        font-size: 25px;
+    }
+    
+    .nvb-left {
+
+	width: 100px;
+}
+    .site-content {
+    left: 100px;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px)  {
+    .site-content {
+    left: 0;
+    z-index: -1;
+    }
+    
+    .nvb-left {
+	width: 80px;
+    
+}
+
+    .site-content .home-pg h1 {
+    font-size: 60px;
+    padding-top: 33vh;
+    }
+	
+    .site-content .home-pg h3 {
+        font-size: 20px;
+    }
+    
+    .main-menu ul li a {
+    padding: 23px 5px ;
+    }
+    
+}
+
+.about-me {
+	font-size: 50px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
